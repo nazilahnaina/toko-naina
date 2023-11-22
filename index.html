@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+            </svg>
+            call us
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container-fluid text-center ">
+            <a class="navbar-brand mx-5 fw-bold" href="#" style="padding-left: 5.5%;">
+              ekommart
+            </a>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                    <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                  </svg>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">About</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Blog</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Poges</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Contact</a>
+          </li>
+      </ul>
+      
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Healthy Food & Organic Market.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Healthy Food & Organic Market.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Shop By Category</h5>
+            <h6 class="text-secondary">Visit Our Website For The Product</h6>
+          </div>
+        </div>
+      </div>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>______</p>
+           </blockquote>
+     </figure>
+    
+    
+      <div class="container-fluid mt-5 ">
+        <div class="row px-3">
+            <div class="col-lg-2">
+                <div class="card">
+                    <img src="buah1.jpg" alt="">
+                    <div class="card-body"></div>
+                </div>
+                <div class="text-center py-1 fw-bold">Drink</div>
+            </div>
+           
+            <div class="col-lg-2">
+              <div class="card">
+                  <img src="buah2.jpg" alt="">
+                  <div class="card-body"></div>
+              </div>
+              <div class="text-center py-1 fw-bold">Fruit</div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+                <img src="buah3.jpg" alt="">
+                <div class="card-body"></div>
+            </div>
+            <div class="text-center py-1 fw-bold">Clothing</div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+              <img src="buah4.jpg" alt="">
+              <div class="card-body"></div>
+          </div>
+          <div class="text-center py-1 fw-bold">Fruit</div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card">
+            <img src="buah5.jpg" alt="">
+            <div class="card-body"></div>
+        </div>
+        <div class="text-center py-1 fw-bold">Food</div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card">
+          <img src="buah6.jpg" alt="">
+          <div class="card-body"></div>
+      </div>
+      <div class="text-center py-1 fw-bold">Chicken</div>
+    </div>
+    <div class="container mt-5 ">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="card">
+                  <img src="foto1.png" alt="">
+              </div>
+          </div>
+         
+          <div class="col-lg-6">
+            <div class="card">
+                <img src="foto2.png" alt="">
+            </div>
+          </div>
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Deals Of The Day</h5>
+            <h6 class="text-secondary">Visit Our Website For The Product</h6>
+          </div>
+        </div>
+      </div>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>______</p>
+           </blockquote>
+     </figure>
+    
+      <section>
+        <div class="container">
+          <div class="row">
+        <div class="card mb-3 border-primary" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sayur6.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">Spinach</h6>
+                <h4 class="card-text">$99.999</h4>
+                <p class="card-text"><small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere odio natus iusto magnam deserunt quam sint aspernatur maiores dolor impedit.</small></p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mx-2 border-primary" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sayur9.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">Green Grapes</h6>
+                <h4 class="card-text">$299.999</h4>
+                <p class="card-text"><small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam nam ad nulla nemo libero iure. At et necessitatibus nemo!</small></p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Featured Products</h5>
+            <h6 class="text-secondary">Visit Our Website For The Product</h6>
+          </div>
+        </div>
+      </div>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>______</p>
+           </blockquote>
+     </figure>
+    </div>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link disabled">About</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link disabled">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Blog</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Poges</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact</a>
+        </li>
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="card-group">
+          <div class="card">
+            <img src="sayur1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$105.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+         
+          <div class="card">
+            <img src="sayur2.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$110.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur3.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$112.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur4.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Drink</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$59.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur5.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Drink</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$100.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-group">
+          <div class="card">
+            <img src="sayur6.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$29.999</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur7.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$130.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur8.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$105.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur9.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$299.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+          
+            </div>
+          </div>
+          <div class="card">
+            <img src="sayur 10.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text"><small class="text-muted">Food</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$106.99</p>
+              <button type="button" class="btn btn-dark">Add To Cart</butto>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div> 
+    </div>
+    </div>
+  </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Healthy Food.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="py-2" style="text-align: center;">
+          <img src="logo1.png" height="85" alt="" class="my-2 mx-4">
+          <img src="logo2.png" alt="" height="85">
+          <img src="logo3.png" alt="" height="85">
+          <img src="logo4.png" alt="" height="85">
+          <img src="logo5.png" alt="" height="85">
+          </div>
+      </section>
+
+    <!--logo-->
+    <div class="container">
+      <div class="row text-center py-3">
+        <div class="col fw-bold fs-4">
+          <h5 class="fw-bold">Latest News</h5>
+          <h6 class="text-secondary">Don't Our Website For The Product</h6>
+        </div>
+      </div>
+    </div>
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>______</p>
+         </blockquote>
+   </figure>
+   
+    </div>
+    <div class="container-fluid mt-5 ">
+      <div class="row px-3">
+          <div class="col-lg-4">
+              <div class="card">
+                  <img src="gambr.png" alt="">
+                  
+              </div>
+
+              <div  class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur ex numquam? Delectus repudiandae aut illum nisi veritatis laboriosam voluptatum?</div>
+          </div>
+         
+          <div class="col-lg-4">
+            <div class="card">
+                <img src="gambar 2.png" alt="">
+               
+                
+            </div>
+            <div  class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit veniam vitae autem, adipisci harum tempora in dolorem maiores at?</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+              <img src="gambar3.png" alt="">
+            
+          </div>
+          <div  class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam obcaecati soluta cum, quod expedita molestiae illum veritatis ipsa itaque!</div>
+      </div>
+      </div>
+    </div>
+      <!--footer-->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              FINO IN FAST
+            </h6>
+            <p><a href="#" class="text-reset">Accesories</a></p>
+            <p><a href="#" class="text-reset">Gaming</a></p>
+            <p><a href="#" class="text-reset">Computer</a></p>
+            <p><a href="#" class="text-reset">Shipping</a></p>
+            <p><a href="#" class="text-reset">PC Computer</a></p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              MERCHANT CENTRAL
+            </h6>
+            <p><a href="#!" class="text-reset">Menhant Sign in</a></p>
+            <p><a href="#!" class="text-reset">How Does</a></p>
+            <p><a href="#!" class="text-reset">Pvicing</a></p>
+            <p><a href="#!" class="text-reset">Tools</a></p>
+            <p><a href="#!" class="text-reset">fulment by ShopClues</a></p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              INFORMATION
+            </h6>
+            <p><a href="#!" class="text-reset">About Us</a></p>
+            <p><a href="#!" class="text-reset">Contact Us</a></p>
+            <p><a href="#!" class="text-reset">All Collections</a></p>
+            <p><a href="#!" class="text-reset">Privacy policy</a></p>
+            <p><a href="#!" class="text-reset">Awords</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              CONTACT
+            </h6>
+            <P><i class="fas fa-home me-3"></i> Contact us at support</P>
+            <P><i class="fas fa-home me-3"></i>  125 New York NT </P>
+
+            <P><i class="fas fa-phone me-3"></i> + 844 123 456 789</P>
+            <P><i class="fas fa-print me-3"></i> + 844 123 456 789</P>
+            <P><i class="fas fa-print me-3"></i> + 844 123 456 789</P>
+      
+          </div>
+        </div>
+      </div>
+    </section>
+    <form class="row g-3 ">
+      <div class="col-auto">
+        <label for="staticEmail2" class="visually-hidden">Email</label>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+      </div>
+      <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+      </div>
+    </form>
+    <section>
+      <div class="container-fluid" style="background-color: rgb(134, 134, 121);">
+          <div class="row text-center fw-bold">
+              <div class="col-lg">
+                  <p>Copyright <i class="bi bi-c-circle"></i> nuansa2023</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+</body>
+</head>
+</html>
+    
+    
+
+
+
+  
+ 
+    
+
+   
+
+    
+      
+           
+
+      
+
+ 
+   
+  
+
+      
+     
+ 
+      
+     
+    
+    
+
+
+
+
+      
+
+
+
+
+
